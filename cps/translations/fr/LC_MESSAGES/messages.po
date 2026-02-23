@@ -43,7 +43,7 @@ msgstr "Statistiques"
 
 #: cps/admin.py:128
 msgid "Calibre database unavailable. Please reconfigure the library path."
-msgstr ""
+msgstr "Base de données claibre non disponible. Vérifier le chemin d'accès à la librairie"
 
 #: cps/admin.py:180
 msgid "Server restarted, please reload page."
@@ -112,12 +112,12 @@ msgstr "Correspond à %(action)s"
 
 #: cps/admin.py:439
 msgid "No pending matches to reject"
-msgstr ""
+msgstr "Aucune action en attente à rejeter"
 
 #: cps/admin.py:445
 #, python-format
 msgid "Rejected %(count)s match(es)"
-msgstr ""
+msgstr "Rejet de %(count)s occurences"
 
 #: cps/admin.py:482
 #, python-brace-format
@@ -824,17 +824,17 @@ msgstr "Échec de la connexion : %(error)s"
 
 #: cps/admin.py:2975
 msgid "Restore failed: Calibre library path is not configured."
-msgstr ""
+msgstr "Restauration echouée: le chemein d'accès à la librairie est introuvable"
 
 #: cps/admin.py:2980
 #, python-format
 msgid "Restore failed: metadata.db not found at %(path)s"
-msgstr ""
+msgstr "Restauration echouée: le fichier metadat.db est introuvable ici %(path)s"
 
 #: cps/admin.py:2985
 #, python-format
 msgid "Restore failed: app.db not found at %(path)s"
-msgstr ""
+msgstr "Restauration echouée: le fichier app.db est introuvable ici %(path)s"
 
 #: cps/admin.py:3057 cps/admin.py:3097
 #, fuzzy, python-format
@@ -843,14 +843,15 @@ msgstr "Échec de la connexion : %(error)s"
 
 #: cps/admin.py:3074
 msgid "Restore completed but app.db cleanup failed. See logs for details."
-msgstr ""
+msgstr "Restauration terminée mais le nettoyage de app.db a échoué. Regarder les journaux pour plus de détails"
 
 #: cps/admin.py:3093
 #, python-format
 msgid ""
 "Restore complete. Backups and restore log saved to %(dir)s. All book-linked "
 "data was reset."
-msgstr ""
+msgstr "Restauration complète. Les journaux pour la sauvegarde et restauration se trouvent ici %(dir)s."
+"Tous les livres sont intégrés"
 
 #: cps/constants.py:207
 msgid "Czech"
@@ -1124,7 +1125,7 @@ msgstr "Calibre-Web Automated - Service de correction EPUB Send-to-Kindle"
 
 #: cps/cwa_functions.py:2031
 msgid "Single-book EPUB Fixer is not supported with Google Drive libraries."
-msgstr ""
+msgstr "Single-book EPUB Fixer n'est pas supporté avec une librairie Google Drive"
 
 #: cps/cwa_functions.py:2038
 #, fuzzy
@@ -1153,7 +1154,7 @@ msgstr "Editer les livres sélectionnés"
 
 #: cps/cwa_functions.py:2072
 msgid "Failed to start EPUB Fixer for selected book."
-msgstr ""
+msgstr "Impossible de démarrer EPUB Fixer pour le livre sélectionné"
 
 #: cps/cwa_functions.py:2119
 msgid "You must be an admin to access this page."
@@ -1245,6 +1246,8 @@ msgid ""
 "Ingest folder is not writable. Check your /cwa-book-ingest volume "
 "permissions."
 msgstr ""
+"Le dossier Ingest est vérouillé en écriture. Changer les permissions"
+"sur le volume /cwa-book"
 
 #: cps/editbooks.py:121
 msgid "Missing or invalid book id for format upload"
